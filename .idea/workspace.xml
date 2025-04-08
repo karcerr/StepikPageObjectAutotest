@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f771a645-ae2e-4f4a-b8e6-c81fef88bd0c" name="Changes" comment="add 4.2.4">
+    <list default="true" id="f771a645-ae2e-4f4a-b8e6-c81fef88bd0c" name="Changes" comment="add 4.2.6">
+      <change afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
     </list>
@@ -68,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744122474469</updated>
-      <workItem from="1744122477096" duration="1258000" />
+      <workItem from="1744122477096" duration="2211000" />
     </task>
     <task id="LOCAL-00001" summary="add 4.2.2">
       <option name="closed" value="true" />
@@ -86,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744123676511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add 4.2.6">
+      <option name="closed" value="true" />
+      <created>1744123978591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744123978591</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,9 +106,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add 4.2.2" />
     <MESSAGE value="add 4.2.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 4.2.4" />
+    <MESSAGE value="add 4.2.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 4.2.6" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StepikPageObjectAutotest$main_page.coverage" NAME="main_page Coverage Results" MODIFIED="1744123116226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
+    <SUITE FILE_PATH="coverage/StepikPageObjectAutotest$main_page.coverage" NAME="main_page Coverage Results" MODIFIED="1744123930644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pages" />
   </component>
 </project>
