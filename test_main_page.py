@@ -1,13 +1,34 @@
+import time
+
+import pytest
+
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
 link = "http://selenium1py.pythonanywhere.com/"
 login_link = "https://selenium1py.pythonanywhere.com/ru/accounts/login/"
 promo_link = " http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
+
 def test_promo_page(browser):
     page = MainPage(browser, promo_link)
     page.open()
     page.click_add_to_cart_button()
     page.solve_quiz_and_get_code()
+
+
+product_base_link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
+urls = [f"{product_base_link}/?promo=offer{no}" for no in range(0, 10)]
+@pytest.mark.parametrize('link', urls)
+def test_promo_page_4_3_4(browser, link):
+    page = MainPage(browser, link)
+    page.open()
+    page.click_add_to_cart_button()
+    page.solve_quiz_and_get_code()
+    time.sleep(2)
+    page.added_name_correct()
+    page.added_price_correct()
+    time.sleep(2)
+
+
 def test_guest_can_go_to_login_page(browser):
     page = MainPage(browser, link)
     page.open()
