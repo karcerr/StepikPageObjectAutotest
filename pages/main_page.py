@@ -26,3 +26,10 @@ class MainPage(BasePage):
         price = self.browser.find_element(By.CSS_SELECTOR, "p.price_color")
         price_added = self.browser.find_element(By.CSS_SELECTOR, "#messages .alert-info strong")
         assert price.text == price_added.text, "Prices do not match"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*MainPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+    def success_message_disappeared(self):
+        assert self.is_disappeared(*MainPageLocators.SUCCESS_MESSAGE), \
+            "Success message has not disappeared after 4 seconds"
